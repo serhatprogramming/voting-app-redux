@@ -1,14 +1,10 @@
-import React from "react";
-
 const ResultDisplay = () => {
-  const yay = 0;
-  const nay = 0;
-  const neutral = 0;
+  const vote = { yay: 0, nay: 0, neutral: 0 };
   return (
     <div>
       <hr />
       <div>
-        Yay: {yay} Nay: {nay} Neutral: {neutral}
+        Yay: {vote.yay} Nay: {vote.nay} Neutral: {vote.neutral}
       </div>
     </div>
   );
