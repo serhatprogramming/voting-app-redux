@@ -1,10 +1,12 @@
+import { useSelector } from "react-redux/es/hooks/useSelector";
+
 const ResultDisplay = () => {
-  const vote = { yay: 0, nay: 0, neutral: 0 };
+  const votes = useSelector((state) => state.votes);
   return (
     <div>
       <hr />
       <div>
-        Yay: {vote.yay} Nay: {vote.nay} Neutral: {vote.neutral}
+        Yay: {votes.yay} Nay: {votes.nay} Neutral: {votes.neutral}
       </div>
     </div>
   );
